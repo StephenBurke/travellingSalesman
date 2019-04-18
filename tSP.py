@@ -26,16 +26,16 @@ with open("holeData.csv") as csvfile:
     y5 = []
 
     for row in readCSV:
-
+        #convert strings from csv file into float
         x = float(row[0])
         y = float(row[1])
         r = float(row[2])
 
+        #graphing input file
         if(r==0.1875):
             x1875.append(x)
             y1875.append(y)
             plt.plot(x1875, y1875, 'r*')
-            #radius.append(r)
         elif(r==0.25):
             x25.append(x)
             y25.append(y)
@@ -51,18 +51,12 @@ with open("holeData.csv") as csvfile:
         elif(r==0.4375):
             x4375.append(x)
             y4375.append(y)
-            plt.plot(x4375, y4375, 'b.')
+            plt.plot(x4375, y4375, 'b8')
         elif(r==0.5):
             x5.append(x)
             y5.append(y)
-            plt.plot(x5, y5, 'r.')
-        
-        
-        
-    
-        #xCoord.append(x)
-        #yCoord.append(y)
-        #radius.append(r)
+            plt.plot(x5, y5, 'r8')
 
-    #plt.plot(xCoord,yCoord,'bo')
     plt.show()
+
+

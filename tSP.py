@@ -34,28 +34,28 @@ with open("holeData.csv") as csvfile:
         if(r==0.1875):
             x1875.append(x)
             y1875.append(y)
-            plt.plot(x1875, y1875, 'r.')
+            plt.plot(x1875, y1875, 'r*')
             #radius.append(r)
         elif(r==0.25):
             x25.append(x)
             y25.append(y)
-            plt.plot(x25, y25, 'b.')
+            plt.plot(x25, y25, 'b*')
         elif(r==0.3125):
             x3125.append(x)
             y3125.append(y)
-            plt.plot(x3125, y3125, 'g.')
+            plt.plot(x3125, y3125, 'y*')
         elif(r==0.375):
             x375.append(x)
             y375.append(y)
-            plt.plot(x375, y375, 'y.')
+            plt.plot(x375, y375, 'g*')
         elif(r==0.4375):
             x4375.append(x)
             y4375.append(y)
-            plt.plot(x4375, y4375, 'g*')
-        else:
+            plt.plot(x4375, y4375, 'b.')
+        elif(r==0.5):
             x5.append(x)
             y5.append(y)
-            plt.plot(x5, y5, 'b*')
+            plt.plot(x5, y5, 'r.')
         
         
         
